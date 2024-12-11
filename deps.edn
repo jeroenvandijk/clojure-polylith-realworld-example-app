@@ -33,7 +33,11 @@
                     :extra-deps  {org.clojure/test.check {:mvn/version "1.1.1"}}}
 
              :poly {:main-opts  ["-m" "polylith.clj.core.poly-cli.core"]
-                    :extra-deps {polylith/clj-poly {:mvn/version "0.2.22-SNAPSHOT"}}}
+                    :extra-deps {polylith/clj-poly {:mvn/version "0.2.22-SNAPSHOT"}
+                    
+                                 io.github.seancorfield/polylith-external-test-runner 
+                                 {:git/tag "v0.6.1" :git/sha "d0f51c2"
+                                  :deps/root "projects/runner"}}}
 
              :build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.3"}
                             io.github.seancorfield/build-clj {:git/tag "v0.9.2"
