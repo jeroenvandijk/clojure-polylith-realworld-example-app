@@ -18,6 +18,10 @@
       :author (:profile author)
       :tagList tags)))
 
+
+{
+
+
 (defn- create-slug [title now]
   (when title
     (let [slug (slugger/->slug title)]
